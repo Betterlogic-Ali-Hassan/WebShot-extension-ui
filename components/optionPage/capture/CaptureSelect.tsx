@@ -41,7 +41,9 @@ const CaptureSelect = ({
           >
             <SelectValue placeholder={defaultValue} />
           </SelectTrigger>
-          <SelectContent className={cn("max-h-[300px]", custom && "w-[10px]")}>
+          <SelectContent
+            className={cn("max-h-[300px]", custom && "w-[10px] right-[45px]")}
+          >
             {options.map((option, i) => (
               <SelectItem key={i} value={option.value}>
                 {option.label}

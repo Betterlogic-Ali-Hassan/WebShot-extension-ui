@@ -14,9 +14,10 @@ const QualityCard = ({ card, setCard }: Props) => {
   return (
     <div
       className={cn(
-        "py-4 w-[388px] px-6 border-t-2 translate-y-full  opacity-0 border-dotted dark:border-white absolute left-0 bg-white bottom-0 transition-all duration-300 dark:bg-[#272727] hidden  ",
+        "py-2 w-[388px] px-6 border-t-2 translate-y-full  opacity-0 border-dotted dark:border-white absolute left-0 bg-white bottom-0 transition-all duration-300 dark:bg-[#272727] hidden right-0 ",
         card && "translate-y-0 opacity-100 block "
       )}
+      style={{ zIndex: "999999" }}
     >
       <VideoQuality />
       <span
@@ -36,7 +37,7 @@ const QualityCard = ({ card, setCard }: Props) => {
                 <path d='M256-227.69 227.69-256l224-224-224-224L256-732.31l224 224 224-224L732.31-704l-224 224 224 224L704-227.69l-224-224-224 224Z' />
               </svg>
             </TooltipTrigger>
-            <TooltipContent className='dark:bg-black text-dark'>
+            <TooltipContent className='dark:bg-black bg-white text-dark'>
               <p>Close</p>
             </TooltipContent>
           </Tooltip>

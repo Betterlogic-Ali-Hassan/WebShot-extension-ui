@@ -1,7 +1,7 @@
 "use client";
 
 import OptionPageCard from "@/components/optionPage/OptionPageCard";
-import Record2 from "@/components/optionPage/Record/Record2";
+import Record2 from "@/components/optionPage/Record/Record";
 import { Sidebar } from "@/components/optionPage/Sidebar";
 import React from "react";
 

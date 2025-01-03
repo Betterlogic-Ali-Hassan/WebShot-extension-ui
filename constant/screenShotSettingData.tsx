@@ -44,10 +44,4 @@ export const settings = [
     enabled: true,
     des: "Automatically generate a shortened URL for uploaded screenshots, making sharing easier.",
   },
-  {
-    id: 10,
-    name: "Enable quick screenshot (without opening the menu)",
-    enabled: true,
-    des: " Allow taking a screenshot with a single click, bypassing the menu options for faster operation.",
-  },
 ];
