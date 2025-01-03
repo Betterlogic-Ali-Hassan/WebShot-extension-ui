@@ -17,7 +17,7 @@ const QualityCard = ({ card, setCard }: Props) => {
         "py-2 w-[388px] px-6 border-t-2 translate-y-full  opacity-0 border-dotted dark:border-white absolute left-0 bg-white bottom-0 transition-all duration-300 dark:bg-[#272727] hidden right-0 ",
         card && "translate-y-0 opacity-100 block "
       )}
-      style={{ zIndex: "999999" }}
+      style={{ zIndex: "99999" }}
     >
       <VideoQuality />
       <span

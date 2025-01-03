@@ -33,26 +33,23 @@ const QualitySelect = ({ title, para }: Props) => {
       >
         <div className={cn("pt-2", para && "py-2")}>
           <h4 className={cn("text-sm", para && "text-base")}>{title}</h4>
-          <p className='text-[#9A9A9A] mt-1 text-[13px] font-normal'>{para}</p>
+          {para && (
+            <p className='text-[#9A9A9A] mt-1 text-[13px] font-normal'>
+              {para}
+            </p>
+          )}
         </div>
         <div className=' ml-4'>
           <Select value={selectedQuality} onValueChange={setSelectedQuality}>
-            <SelectTrigger
-              className={cn(" w-[120px] h-[44px]", !para && "w-full")}
-            >
+            <SelectTrigger className='w-[120px] h-[44px]'>
               <SelectValue placeholder='Select video quality' />
             </SelectTrigger>
-            <SelectContent className='max-h-[190px]'>
+            <SelectContent className='max-h-[190px]' style={{ zIndex: 999999 }}>
               {qualityOptions.map((option) => (
                 <SelectItem key={option.value} value={option.value}>
                   <div className='grid grid-cols-2 w-full'>
                     <span>{option.label}</span>
-                    <Badge
-                      className={cn(
-                        "rounded text-[10.4px] h-[18px] w-[20px] bg-dark text-card ml-4 mr-2 py-0 font-semibold flex items-center justify-center",
-                        para && " ml-2.5"
-                      )}
-                    >
+                    <Badge className='rounded text-[10.4px] h-[18px] w-[20px] bg-dark text-card ml-2.5 mr-2 py-0 font-semibold flex items-center justify-center'>
                       {option.badge}
                     </Badge>
                   </div>
