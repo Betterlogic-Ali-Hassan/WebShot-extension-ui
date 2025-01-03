@@ -43,6 +43,7 @@ const CaptureSelect = ({
           </SelectTrigger>
           <SelectContent
             className={cn("max-h-[300px]", custom && "w-[10px] right-[45px]")}
+            style={{ zIndex: 999999 }}
           >
             {options.map((option, i) => (
               <SelectItem key={i} value={option.value}>
